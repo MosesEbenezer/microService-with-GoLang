@@ -10,7 +10,7 @@ import (
 func main() {
 
 	// adding a http handler
-	http.HandleFunc("/", func(rw http.ResponseWriter, r*http.Request) {  //add a path and a function - i.e, when a request comes in and matches this path, handle this function
+	http.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {  //add a path and a function - i.e, when a request comes in and matches this path, handle this function
 		log.Println("Hello World")
 		
 
@@ -30,7 +30,7 @@ func main() {
 		// log.Printf("Data %s\n", d)
 
 		//write bcak to the user
-		fmt.Fprintf(rw, "Hello %s", d)
+		fmt.Fprintf(rw, "Hello there %s", d)
 	})
 
 	// adding another http handler
